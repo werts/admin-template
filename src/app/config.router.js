@@ -30,7 +30,7 @@ angular.module('app')
 						resolve: {
 							deps: ['$ocLazyLoad',
 								function($ocLazyLoad) {
-									return $ocLazyLoad.load(['']);
+									return $ocLazyLoad.load(['dist/sys/controllers/chart.js']);
 								}
 							]
 						}
