@@ -22,6 +22,8 @@
   "homepage": "https://github.com/werts/admin-template#readme",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-angular-htmlify": "^2.3.0",
+    "gulp-ngmin": "^0.3.0",
     "gulp-sequence": "^0.4.6"
   }
 }

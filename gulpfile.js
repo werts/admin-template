@@ -3,6 +3,7 @@
  */
 const gulp = require('gulp');
 const sequence = require('gulp-sequence');
+const htmlify = require('gulp-angular-htmlify');
 
 //构建生成文件
 gulp.task();
