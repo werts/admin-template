@@ -5,7 +5,6 @@ angular.module('app', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
-    'ngSanitize',
     'ngTouch',
     'ngStorage',
     'ui.router',
@@ -13,6 +12,5 @@ angular.module('app', [
     'ui.load',
     'ui.jq',
     'ui.validate',
-    'oc.lazyLoad',
-    'pascalprecht.translate'
+    'oc.lazyLoad'
 ]);
