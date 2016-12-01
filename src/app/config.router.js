@@ -22,15 +22,15 @@ angular.module('app')
 					.state('app', {
 						abstract: true,
 						url: '/app',
-						templateUrl: 'tpl/app.html'
+						templateUrl: 'dist/sys/tpl/app.html'
 					})
 					.state('app.dashboard-v1', {
 						url: '/dashboard-v1',
-						templateUrl: 'tpl/app_dashboard_v1.html',
+						templateUrl: 'dist/sys/tpl/app_dashboard_v1.html',
 						resolve: {
 							deps: ['$ocLazyLoad',
 								function($ocLazyLoad) {
-									return $ocLazyLoad.load(['js/controllers/chart.js']);
+									return $ocLazyLoad.load(['']);
 								}
 							]
 						}
@@ -38,7 +38,7 @@ angular.module('app')
 					// others
 					.state('lockme', {
 						url: '/lockme',
-						templateUrl: 'tpl/page_lockme.html'
+						templateUrl: 'dist/sys/tpl/page_lockme.html'
 					})
 					.state('access', {
 						url: '/access',
@@ -46,33 +46,33 @@ angular.module('app')
 					})
 					.state('access.signin', {
 						url: '/signin',
-						templateUrl: 'tpl/page_signin.html',
+						templateUrl: 'dist/sys/tpl/page_signin.html',
 						resolve: {
 							deps: ['uiLoad',
 								function(uiLoad) {
-									return uiLoad.load(['js/controllers/signin.js']);
+									return uiLoad.load(['dist/sys/controllers/signin.js']);
 								}
 							]
 						}
 					})
 					.state('access.signup', {
 						url: '/signup',
-						templateUrl: 'tpl/page_signup.html',
+						templateUrl: 'dist/sys/tpl/page_signup.html',
 						resolve: {
 							deps: ['uiLoad',
 								function(uiLoad) {
-									return uiLoad.load(['js/controllers/signup.js']);
+									return uiLoad.load(['dist/sys//controllers/signup.js']);
 								}
 							]
 						}
 					})
 					.state('access.forgotpwd', {
 						url: '/forgotpwd',
-						templateUrl: 'tpl/page_forgotpwd.html'
+						templateUrl: 'dist/sys/tpl/page_forgotpwd.html'
 					})
 					.state('access.404', {
 						url: '/404',
-						templateUrl: 'tpl/page_404.html'
+						templateUrl: 'dist/sys/tpl/page_404.html'
 					})
 			}
 		]
