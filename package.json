@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/werts/admin-template/issues"
   },
-  "homepage": "https://github.com/werts/admin-template#readme"
+  "homepage": "https://github.com/werts/admin-template#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sequence": "^0.4.6"
+  }
 }
