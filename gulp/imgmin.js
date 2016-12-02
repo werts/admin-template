@@ -6,7 +6,7 @@ const pngquant = require('imagemin-pngquant');
 const gulp = require('gulp');
 
 gulp.task('imagemin', function() {
-	return gulp.src('src/img/**/*.(jpg|png)')
+	return gulp.src('src/img/**/*.+(jpg|png)', {base: 'src'})
 		.pipe(imagemin({
 			progressive: true,
 			svgoPlugins: [{
@@ -14,7 +14,7 @@ gulp.task('imagemin', function() {
 			}],
 			use: [pngquant()]
 		}))
-		.pipe(gulp.dest('dist/'));
+		.pipe(gulp.dest('dist'));
 });
 
 module.exports = gulp;

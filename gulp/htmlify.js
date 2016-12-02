@@ -8,9 +8,9 @@ gulp.task('htmlify', function() {
 	return gulp.src([
 			'src/app/**/*.html',
 			'src/sys/**/*.html'
-		])
+		], {base: 'src'})
 		.pipe(htmlify())
-		.pipe(gulp.dest('dist/'));
+		.pipe(gulp.dest('dist'));
 });
 
 module.exports = gulp;
