@@ -5,7 +5,9 @@ angular.module('app').directive('uiNav', [
       restrict: 'AC',
       link: function (scope, el, attr) {
         var _window = $(window), _mb = 768, wrap = $('.app-aside'), next, backdrop = '.dropdown-backdrop';
-        // unfolded
+        /*
+         * unfolded
+         */
         el.on('click', 'a', function (e) {
           next && next.trigger('mouseleave.nav');
           var _this = $(this);

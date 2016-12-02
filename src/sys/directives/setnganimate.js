@@ -1,3 +1,6 @@
+/**
+ * directive
+ */
 angular.module('app')
   .directive('setNgAnimate', ['$animate', function ($animate) {
     return {

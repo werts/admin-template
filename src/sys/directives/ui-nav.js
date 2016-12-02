@@ -3,12 +3,14 @@ angular.module('app')
     return {
       restrict: 'AC',
       link: function(scope, el, attr) {
-        var _window = $(window), 
-        _mb = 768, 
-        wrap = $('.app-aside'), 
-        next, 
+        var _window = $(window),
+        _mb = 768,
+        wrap = $('.app-aside'),
+        next,
         backdrop = '.dropdown-backdrop';
-        // unfolded
+        /*
+         * unfolded
+         */
         el.on('click', 'a', function(e) {
           next && next.trigger('mouseleave.nav');
           var _this = $(this);
@@ -35,7 +37,7 @@ angular.module('app')
           }else{
             return;
           }
-         
+
           _this.parent().addClass('active');
           top = _this.parent().position().top + offset;
           next.css('top', top);
